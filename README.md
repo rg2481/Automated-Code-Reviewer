@@ -1,43 +1,24 @@
 # Automated-Code-Reviewer
 
 ## Project Overview
-This project aims to build an **AI-powered code reviewer** tool using **OpenAI Codex** (or Hugging Face's **CodeGen**) to automatically review Python code for syntax errors, logic issues, and code quality improvements. The tool helps developers improve their code by providing **instant feedback** and suggestions based on industry best practices.
+An AI-powered code reviewer built using **FastAPI** and **Streamlit**, leveraging **OpenAI GPT-4** for analyzing Python code and providing feedback on syntax, logic errors, and best practices. This tool is designed to assist developers by automating the review process, enhancing code quality, and saving time.
 
----
+## Features
+- FastAPI backend to handle code review requests
+- Streamlit frontend for easy user interaction
+- OpenAI GPT-4 for intelligent code analysis and suggestions
+- Supports real-time feedback on syntax, structure, and logic errors
+- Easy to deploy and integrate into existing workflows
+- Provides best practices and optimizations for better code quality
 
-## Key Features
-- **Syntax Error Detection:** Identifies common syntax errors in Python code.
-- **Logic Error Review:** Detects potential issues in the logic and flow of code.
-- **Code Quality Suggestions:** Provides recommendations to improve readability, structure, and performance.
-- **Real-time Feedback:** Provides feedback instantly after code submission.
-- **Interactive UI:** User-friendly interface using **Streamlit/Gradio** for seamless interaction.
-- **Deployment:** API deployed using **FastAPI** for backend handling.
+## Technologies Used
+- **FastAPI** - Backend API framework for high-performance processing
+- **Streamlit** - Interactive frontend framework for seamless user experience
+- **OpenAI GPT-4** - AI-powered code analysis for generating meaningful insights
+- **Transformers (Hugging Face)** - NLP support for enhancing language understanding
+- **Spacy & NLTK** - Additional NLP tools for processing textual content
+- **Uvicorn** - ASGI server for running FastAPI applications efficiently
 
----
-
-## Tech Stack
-- **Backend:**  
-  - **FastAPI**: For serving API requests.
-  - **Uvicorn**: ASGI server for handling real-time interactions.
-  
-- **Frontend:**  
-  - **Streamlit** or **Gradio**: For building the web-based user interface.
-
-- **AI Libraries:**  
-  - **OpenAI API**: To interact with GPT models like **GPT-4o**.
-  - **Hugging Face Transformers**: For model integration and code review.
-  - **LangChain**: For creating structured pipelines in code review.
-  - **spaCy**: For text processing and analysis.
-
-- **Deployment:**  
-  - **Docker**: For containerization and easy deployment.
-
-- **Dataset Sources:**  
-  - **Kaggle**  
-  - **Hugging Face Hub**  
-  - **UCI ML Repository**
-
----
 
 ## How It Works
 1. **User Submits Code:** The user inputs Python code (via file upload or typing in the UI).
